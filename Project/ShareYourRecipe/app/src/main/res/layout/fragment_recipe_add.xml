@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="5dp">
+
+        <!-- Recipe Name -->
+        <EditText
+            android:id="@+id/etRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="კერძის დასახელება" />
+
+        <EditText
+            android:id="@+id/etPreparationTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="მომზადების დრო" />
+
+        <com.example.shareyourrecipe.ui.multispinner.MultiSpinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/categories_selector"></com.example.shareyourrecipe.ui.multispinner.MultiSpinner>
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="აირჩიეთ სურათი" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etRecipeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="start|top"
+            android:hint="Recipe Description"
+            android:inputType="textMultiLine"
+            android:minHeight="400dp" />
+
+        <Button
+            android:id="@+id/btnSaveRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="55dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="დამატება" />
+
+    </LinearLayout>
+
+</ScrollView>

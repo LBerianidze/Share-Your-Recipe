@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217978501234",
+    "project_id": "share-your-recipe-71025",
+    "storage_bucket": "share-your-recipe-71025.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217978501234:android:47ae95e09ae6df6684eaeb",
+        "android_client_info": {
+          "package_name": "com.example.shareyourrecipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217978501234-fig29oaobf74457uvrqh8liv4g3nm37j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGUtCoOriY7VQxYNUE1VTFZmONmmpOD8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217978501234-fig29oaobf74457uvrqh8liv4g3nm37j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

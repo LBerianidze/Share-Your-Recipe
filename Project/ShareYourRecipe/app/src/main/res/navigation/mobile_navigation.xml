@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.shareyourrecipe.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_self"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_recipeadd"
+        android:name="com.example.shareyourrecipe.ui.recipeadd.RecipeAddFragment"
+        android:label="რეცეპტის დამატება"
+        tools:layout="@layout/fragment_recipe_add" />
+    <fragment
+        android:id="@+id/nav_recipedetail"
+        android:name="com.example.shareyourrecipe.ui.fooddetail.FoodDetailFragment"
+        android:label="რეცეპტი"
+        tools:layout="@layout/fragment_recipe_add" >
+        <argument
+            android:name="foodName"
+            app:argType="string" />
+        <argument
+            android:name="prepeationTime"
+            app:argType="string" />
+        <argument
+            android:name="photoUrl"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+    </fragment>
+</navigation>
